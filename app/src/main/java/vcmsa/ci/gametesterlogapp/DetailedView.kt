@@ -1,6 +1,8 @@
 package vcmsa.ci.gametesterlogapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,19 @@ class DetailedView : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_detailed_view)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val recorded_entries = findViewById<TextView>(R.id.recorded_entries)
+        val calccalculated_values = findViewById<TextView>(R.id.calculated_values)
+        val MainscreenButton = findViewById<Button>(R.id.back_to_main_screen)
+        val ExitButton = findViewById<Button>(R.id.exit_btn)
+
+
+
+
+
+
+
+
         }
     }
-}
+

@@ -4,7 +4,7 @@ class GameSessionProcessor {
 }
 object InventoryManager {
     // 3 parallel 1-dimensional arrays
-    private val itemNames = mutableListOf<String>()
+    private val calculate = mutableListOf<String>()
     private val itemPrices = mutableListOf<Double>()
     private val itemQuantities = mutableListOf<Int>()
 
